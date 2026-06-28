@@ -91,6 +91,10 @@ Mengirimkan pengingat secara berkala agar pengguna tidak lupa minum air
 <img width="172" height="101" alt="Cuplikan layar 2026-06-28 211140" src="https://github.com/user-attachments/assets/d988fecf-a334-4d46-9b2b-23149ae62963" />
 
 
+# Demo Aplikasi AyoMinum 
+https://youtu.be/Mor-SVhlEEU
+
+
 ---
 # Kesimpulan
 
