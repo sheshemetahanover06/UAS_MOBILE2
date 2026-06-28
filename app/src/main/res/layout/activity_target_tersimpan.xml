@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#60E8F7">
+
+    <!-- Status Bar dengan Jam dan Baterai -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:paddingHorizontal="20dp"
+        android:paddingTop="12dp">
+
+        <!-- Jam di sebelah kiri -->
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            android:text="9:41"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#000000" />
+
+        <!-- Baterai di sebelah kanan -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@drawable/ic_battery"
+                android:layout_marginEnd="4dp"/>
+
+            <TextView
+                android:id="@+id/tv_battery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100%"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="#000000" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <!-- ScrollView untuk konten yang bisa di-scroll -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp"
+            android:paddingBottom="32dp">
+
+            <!-- Icon/Tanda Centang Biru (menggunakan vector drawable) -->
+            <FrameLayout
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:background="#E3F2FD"
+                android:backgroundTintMode="src_atop">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="✓"
+                    android:textSize="50sp"
+                    android:textColor="#0891B2"
+                    android:gravity="center"
+                    android:textStyle="bold" />
+
+            </FrameLayout>
+
+            <!-- Judul Sukses dengan warna biru -->
+            <TextView
+                android:id="@+id/tv_title_success"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="24dp"
+                android:text="Target Tersimpan"
+                android:textSize="24sp"
+                android:textColor="#0891B2"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_subtitle_success"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:text="Target Berhasil Disimpan!"
+                android:textSize="18sp"
+                android:textColor="#1A237E"
+                android:textStyle="bold" />
+
+            <!-- Pesan Motivasi -->
+            <TextView
+                android:id="@+id/tv_motivation1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp"
+                android:text="Target Minum Harianmu Sudah Ditetapkan"
+                android:textSize="14sp"
+                android:textColor="#1A237E"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/tv_motivation2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Yuk Biasakan Minum Air Sekarang!"
+                android:textSize="14sp"
+                android:textColor="#1A237E"
+                android:gravity="center" />
+
+            <!-- Card Target Minum -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_target"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="24dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="4dp"
+                app:cardBackgroundColor="#E3F2FD">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="24dp"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/tv_target_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Target Minum Harian Kamu!"
+                        android:textSize="16sp"
+                        android:textColor="#1A237E"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_target_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="2.170 ml / hari"
+                        android:textSize="32sp"
+                        android:textColor="#0891B2"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- Tips dari AI -->
+            <LinearLayout
+                android:id="@+id/layout_tips_ai"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#FFFFFF"
+                android:padding="16dp"
+                android:layout_marginBottom="32dp"
+                app:cardCornerRadius="12dp">
+
+                <TextView
+                    android:id="@+id/tv_tips_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tips Dari AI"
+                    android:textSize="14sp"
+                    android:textColor="#1A237E"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:id="@+id/tv_tips_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jaga konsistensi minum air setiap hari agar tubuh tetap sehat dan terhidrasi!"
+                    android:textSize="13sp"
+                    android:textColor="#666666" />
+
+            </LinearLayout>
+
+            <!-- Tombol Kembali dengan warna biru -->
+            <Button
+                android:id="@+id/btn_back_to_dashboard"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:text="Kembali Ke Dashboard"
+                android:textSize="14sp"
+                android:textAllCaps="false"
+                android:backgroundTint="#0891B2"
+                android:textColor="#FFFFFF"
+                app:cornerRadius="28dp"
+                android:layout_marginBottom="40dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <!-- Bottom Navigation dengan Ikon (FIXED DI BAWAH) -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E0E0E0" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:elevation="8dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:clickable="true">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/beranda" />
+
+            <TextView
+                android:id="@+id/nav_beranda"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Beranda"
+                android:textSize="12sp"
+                android:textColor="#4FC3F7" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:clickable="true">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/riwayat" />
+
+            <TextView
+                android:id="@+id/nav_riwayat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Riwayat"
+                android:textSize="12sp"
+                android:textColor="#999999" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:clickable="true">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/pengaturan" />
+
+            <TextView
+                android:id="@+id/nav_pengaturan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Pengaturan"
+                android:textSize="12sp"
+                android:textColor="#999999" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

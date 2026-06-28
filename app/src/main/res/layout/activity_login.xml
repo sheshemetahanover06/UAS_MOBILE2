@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_login">
+
+    <!-- TITLE -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pengingat\nMinum Air"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="#1F6E6E"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"/>
+
+    <!-- SUBTITLE -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="jaga kesehatan dengan rajin minum air!"
+        android:textSize="13sp"
+        android:textColor="#1F6E6E"
+        android:layout_below="@id/title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"/>
+
+    <!-- BOX FORM -->
+    <LinearLayout
+        android:layout_width="320dp"
+        android:layout_height="230dp"
+        android:orientation="vertical"
+        android:background="@drawable/bg_form"
+        android:layout_centerInParent="true"
+        android:padding="25dp"
+        android:layout_marginTop="40dp">
+
+        <!-- USERNAME -->
+        <EditText
+            android:id="@+id/etUsername"
+            android:hint="Username"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:background="@android:color/transparent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#000"/>
+
+        <!-- PASSWORD -->
+        <EditText
+            android:id="@+id/etPassword"
+            android:hint="Password"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:inputType="textPassword"
+            android:background="@android:color/transparent"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#000"/>
+
+    </LinearLayout>
+
+    <!-- BUTTON LOGIN -->
+    <Button
+        android:id="@+id/btnLogin"
+        android:text="Login"
+        android:textColor="#000"
+        android:textAllCaps="false"
+        android:background="@drawable/btn_login"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="70dp"/>
+
+</RelativeLayout>
