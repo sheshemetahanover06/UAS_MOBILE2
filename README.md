@@ -33,8 +33,14 @@ Kurangnya konsumsi air dapat menyebabkan dehidrasi, menurunkan konsetrasi, dan b
 - Git & Github
 
 ---
+
+# Clickup 
+<img width="802" height="387" alt="ClickUp - AyoMinum" src="https://github.com/user-attachments/assets/adfc4c1d-b966-4a96-9abf-c6052531c1bf" />
+
+
 # Storyboard 
 <img width="1536" height="1024" alt="StoryBoard - AyoMinum" src="https://github.com/user-attachments/assets/86386cb6-8193-40f6-a46d-fb8f32b02f2b" />
+
 
 # Tampilan Aplikasi 
 1. Login
